@@ -1,19 +1,22 @@
 <template>
   <div class="hello bg-danger">
     <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
+  <Home></Home>
   </div>
 </template>
 
 <script>
-export default {
+  import Home from "./home/Home/Home";
+  export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to my first Vue.js Application'
     }
+  },
+    components : {Home: Home}
+
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
