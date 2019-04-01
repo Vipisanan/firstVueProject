@@ -1,7 +1,7 @@
 <template>
     <div class="Home">
-      <p>hi vipi</p>
-      <table class="table table-dark">
+      <br>
+      <table class="table table-info">
         <thead>
         <tr>
           <th scope="col">#</th>

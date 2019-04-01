@@ -1,12 +1,16 @@
 <template>
-  <div class="hello bg-danger">
-    <h1>{{ msg }}</h1>
-  <Home></Home>
+  <div class="hello ">
+    <NavBar></NavBar>
+    <router-view/>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
-  import Home from "./home/Home/Home";
+  import Home from "./room/Home/Home";
+  import NavBar from "./room/Home/NavBar/NavBar";
+  import Footer from "./room/Home/Footer/Footer";
+  import About from "./room/Home/NavBar/About/About";
   export default {
   name: 'HelloWorld',
   data () {
@@ -14,25 +18,12 @@
       msg: 'Welcome to my first Vue.js Application'
     }
   },
-    components : {Home: Home}
+    components : {Home,NavBar,Footer,About}
 
   }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>
