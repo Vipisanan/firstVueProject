@@ -46,6 +46,7 @@
       }
     },
     mounted(){
+      //called get method
       var self = this;
       axios.get('https://jsonplaceholder.typicode.com/albums')
         .then(function (res) {
@@ -55,6 +56,18 @@
         .catch(function (err) {
           console.log(err);
         })
+      axios.post('https://jsonplaceholder.typicode.com/posts',{
+        userId : 40,
+        title: 'hi vipi',
+        body: 'testing body'
+      })
+        .then(function (res) {
+          console.log(res);
+        })
+        .catch(function (err) {
+          console.log(err);
+        })
+
     },
     created() {
       console.log('Component has been created!');
